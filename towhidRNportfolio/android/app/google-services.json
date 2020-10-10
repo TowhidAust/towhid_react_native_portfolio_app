@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "365493099263",
+    "firebase_url": "https://towhidportfolioapp.firebaseio.com",
+    "project_id": "towhidportfolioapp",
+    "storage_bucket": "towhidportfolioapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365493099263:android:682bac89429b1e11388aca",
+        "android_client_info": {
+          "package_name": "com.towhidrnportfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365493099263-u51lfdim6u56bdt3c9pj8kc1j1hd3p88.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.towhidrnportfolio",
+            "certificate_hash": "db172f6a77d799a404e8e6b621e5ef9141a03755"
+          }
+        },
+        {
+          "client_id": "365493099263-9iugvkp364ii5h5gob2ub555j1ditjc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB4ZmfpdhPb05p1e6yC9jhUCwb9uWILN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365493099263-9iugvkp364ii5h5gob2ub555j1ditjc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
