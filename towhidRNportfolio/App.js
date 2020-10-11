@@ -1,13 +1,20 @@
-import React, { Component } from 'react'
-import { Button, Text } from 'react-native'
+import React, { Component } from 'react';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import loginScreen from './src/screens/login';
+import Home from './src/screens/home';
+const Stack = createStackNavigator();
 
 export default class App extends Component {
   render() {
     return (
-      <>
-        <Button title="This is a button" ></Button>
-        <Text>Hi this is towhid react portfolio</Text>
-      </>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="Login" component={loginScreen} />
+          <Stack.Screen name="Home" component={Home} />
+        </Stack.Navigator>
+      </NavigationContainer>
     )
   }
 }
