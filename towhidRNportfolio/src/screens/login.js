@@ -28,9 +28,11 @@ export default class loginScreen extends Component {
             if(user){
                 console.log("user from component did mount",user);
                 this.props.navigation.navigate('Home');
+                alert("User is logged in, calling from component did mount");
             }else{
                 console.log("no user logged in");
                 // this.props.navigation.navigate('Login');
+                alert("User is not logged in, calling from component did mount");
 
             }
         });
@@ -58,6 +60,7 @@ export default class loginScreen extends Component {
             // Get the users ID token
             let userInfo = await GoogleSignin.signIn();
             console.log('USER INFO: ', userInfo);
+            alert("userinfo found on login google function");
 
             const {idToken} = userInfo;
 
@@ -74,8 +77,12 @@ export default class loginScreen extends Component {
                     if(user){
                         console.log("user== after resubscribe",user);
                         this.props.navigation.navigate('Home');
+                        alert("resubscribed and found the user on login google function");
+
                     }else{
-                        console.log("no user logged in")
+                        console.log("no user logged in");
+                        alert("resubscribed and no user found on login google function");
+
                     }
                 });
 

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "365493099263-kd43m9erlr18gf29r3g7sf3kmcpejfe2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.towhidrnportfolio",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
           "client_id": "365493099263-u51lfdim6u56bdt3c9pj8kc1j1hd3p88.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
