@@ -16,7 +16,7 @@ export default class Home extends Component {
     render() {
         return (
             <>
-               <Button title="home"/>
+               <Button title="Home"/>
                <Button title="logout" color="red" onPress= {()=> auth().signOut().then(()=>{
                    this.props.navigation.navigate('Login');
                }).catch(err=>{

@@ -29,7 +29,7 @@ export default class loginScreen extends Component {
                 console.log("user from component did mount",user);
                 this.props.navigation.navigate('Home');
             }else{
-                alert("no user logged in");
+                console.log("no user logged in");
                 // this.props.navigation.navigate('Login');
 
             }
@@ -75,7 +75,7 @@ export default class loginScreen extends Component {
                         console.log("user== after resubscribe",user);
                         this.props.navigation.navigate('Home');
                     }else{
-                        alert("no user logged in")
+                        console.log("no user logged in")
                     }
                 });
 
@@ -94,10 +94,10 @@ export default class loginScreen extends Component {
         if(this.state.isDataLoaded){
             return (
                 <>
-                    <Button title="Login With Google" onPress={()=>{
+                    <Button title="Login Google" onPress={()=>{
 
                       this.loginGoogle().then(()=>{
-                          alert("Logged in");
+                          console.log("Logged in");
                       }).catch(err=>{
                           console.log(err)
                       });
